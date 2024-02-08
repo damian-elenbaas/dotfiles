@@ -1,0 +1,15 @@
+.tmux
+
+.config/Microsoft*
+.config/OpenRGB
+.config/Thunar
+.config/alacritty/themes
+.config/autostart
+.config/chromium
+.config/dconf
+.config/discord
+.config/github-copilot
+.config/htop
+.config/spotify
+.config/systemd
+.config/teams
