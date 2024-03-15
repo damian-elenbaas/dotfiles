@@ -211,6 +211,9 @@ exec --no-startup-id picom -b
 # Start Flameshot
 exec --no-startup-id flameshot
 
+# Set composer key to capslock
+exec --no-startup-id setxkbmap -option compose:caps
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
