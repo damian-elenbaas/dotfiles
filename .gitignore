@@ -1,0 +1,12 @@
+.tmux/
+.config/*
+
+!.gitmodules
+!.bashrc
+!.config/btop/
+!.config/i3/
+!.config/nvim/
+!.config/picom.conf/
+!.config/wezterm/
+!.tmux.conf
+!.zshrc
