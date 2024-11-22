@@ -1,6 +1,6 @@
 return {
   foreground = "#ffffff",
-  background = "#212337",
+  background = "#131313",
 
   cursor_bg = "#37f499",
   cursor_fg = "#000000",
@@ -17,7 +17,6 @@ return {
   indexed = { [16] = "#ffbd5e", [17] = "#ff6e5e" },
 
   tab_bar = {
-    background = "323449",
+    background = "131313",
   },
 }
-
