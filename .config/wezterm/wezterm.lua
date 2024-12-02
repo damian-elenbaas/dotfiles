@@ -19,6 +19,20 @@ config.keys = {
   { key = "t", mods = "ALT", action = act { SpawnTab = "CurrentPaneDomain" } },
   -- set closeTab to modifier Alt
   { key = "w", mods = "ALT", action = act { CloseCurrentTab = { confirm = true } } },
+  -- set activate pane right modifier Alt
+  { key = "e", mods = "ALT", action = act { CloseCurrentPane = { confirm = true } } },
+  -- set split vertical modifier Alt
+  { key = "v", mods = "ALT", action = act { SplitVertical = { domain = "CurrentPaneDomain" } } },
+  -- set split vertical modifier Alt
+  { key = "b", mods = "ALT", action = act { SplitHorizontal = { domain = "CurrentPaneDomain" } } },
+  -- set activate pane left modifier Alt
+  { key = "h", mods = "ALT", action = act { ActivatePaneDirection = "Left" } },
+  -- set activate pane down modifier Alt
+  { key = "j", mods = "ALT", action = act { ActivatePaneDirection = "Down" } },
+  -- set activate pane up modifier Alt
+  { key = "k", mods = "ALT", action = act { ActivatePaneDirection = "Up" } },
+  -- set activate pane right modifier Alt
+  { key = "l", mods = "ALT", action = act { ActivatePaneDirection = "Right" } },
 }
 
 config.window_padding = {
@@ -59,6 +73,10 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
     { Text = title },
   }
 end)
+
+-- Vi navigation
+local modal = wezterm.plugin.require("https://github.com/MLFlexer/modal.wezterm")
+modal.apply_to_config(config)
 
 -- -- and finally, return the configuration to wezterm
 return config
