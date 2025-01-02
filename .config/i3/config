@@ -422,6 +422,8 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 # https://wiki.archlinux.org/title/Session_lock#xautolock
 #exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
+#Xmodmap
+exec --no-startup-id xmodmap ~/.Xmodmap
 
 # xscreensaver
 # https://www.jwz.org/xscreensaver
