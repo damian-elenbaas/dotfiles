@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 -- For example, changing the color scheme:
 config.colors = require('color')
-config.font = wezterm.font('HackNerdFontMono', { weight = 'Regular' })
+config.font = wezterm.font('HackNerdFont', { weight = 'Regular' })
 config.font_size = 13.5
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
